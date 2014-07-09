@@ -15,6 +15,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic)NSMutableArray* trails;
+@property (nonatomic)NSIndexPath* selectedCell;
 
 @end
 
@@ -67,12 +68,24 @@
     }
 
     //get the tab bar controller
-    MapViewController* mvc = [self.tabBarController.viewControllers objectAtIndex:1];
+    MapViewController* mapViewController = [self.tabBarController.viewControllers objectAtIndex:1];
     
     //pass the selected cell
-    mvc.trail = self.trails[indexPath.item];
-    
+    mapViewController.trail = self.trails[indexPath.item];
 }
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    if (cell.accessoryType == UITableViewCellAccessoryCheckmark )
+    {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    return indexPath;
+}
+
+
 
 #pragma mark -TrailManagerDelegate
 -(void)didFinishParsingXMLFile:(TrailManager*)trailManager forTrail:(Trail*)trail
