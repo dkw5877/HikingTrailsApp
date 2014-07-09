@@ -31,27 +31,6 @@
 }
 
 
-- (instancetype)initWithName:(NSString*)name
-{
-    self = [self init];
-    if (self)
-    {
-        
-    }
-    return self;
-}
-
-- (instancetype)initWithName:(NSString*)name andGeoPoints:(NSArray*)geoPoints
-{
-    self = [self init];
-    
-    if (self)
-    {
-        
-    }
-    return self;
-}
-
 - (NSString *)description
 {
     NSString* description = [NSString stringWithFormat:@"trail:%@ geopoints:%@", self.trailName, self.geopoints];

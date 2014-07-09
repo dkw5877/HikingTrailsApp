@@ -11,11 +11,9 @@
 
 @interface TrailManager()< NSXMLParserDelegate >
 
-@property(nonatomic,readwrite)NSArray* trails;
-@property(nonatomic)NSMutableArray* trailData;
-@property(nonatomic)NSMutableArray* trailGeoPoints;
 @property(nonatomic)Trail* currentTrail;
 @property(nonatomic)BOOL storingCharacters;
+
 @end
 
 @implementation TrailManager
@@ -25,7 +23,7 @@
     self = [super init];
     if (self)
     {
-        self.trailGeoPoints= [NSMutableArray new];
+
     }
     return self;
 }
@@ -33,9 +31,11 @@
 
 - (void)loadTrailData:(NSURL*)url
 {
-    NSXMLParser* parser = [[NSXMLParser alloc]initWithContentsOfURL:url];
-    parser.delegate = self;
-    [parser parse];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSXMLParser* parser = [[NSXMLParser alloc]initWithContentsOfURL:url];
+        parser.delegate = self;
+        [parser parse];
+    });
 }
 
 
