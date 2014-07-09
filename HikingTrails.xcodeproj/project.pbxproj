@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE95F7A0196C59B80011FB88 /* Albertson.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CE95F79D196C59B80011FB88 /* Albertson.gpx */; };
+		CE95F7A1196C59B80011FB88 /* LangLoop.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CE95F79E196C59B80011FB88 /* LangLoop.gpx */; };
+		CE95F7A2196C59B80011FB88 /* LongCanyonTrl.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CE95F79F196C59B80011FB88 /* LongCanyonTrl.gpx */; };
+		CEE2FCF8196B9CE200367F6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE2FCF7196B9CE200367F6A /* Foundation.framework */; };
+		CEE2FCFA196B9CE200367F6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE2FCF9196B9CE200367F6A /* CoreGraphics.framework */; };
+		CEE2FCFC196B9CE200367F6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE2FCFB196B9CE200367F6A /* UIKit.framework */; };
+		CEE2FD02196B9CE200367F6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEE2FD00196B9CE200367F6A /* InfoPlist.strings */; };
+		CEE2FD04196B9CE200367F6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2FD03196B9CE200367F6A /* main.m */; };
+		CEE2FD08196B9CE200367F6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2FD07196B9CE200367F6A /* AppDelegate.m */; };
+		CEE2FD0B196B9CE200367F6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEE2FD09196B9CE200367F6A /* Main.storyboard */; };
+		CEE2FD0E196B9CE200367F6A /* TrailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2FD0D196B9CE200367F6A /* TrailViewController.m */; };
+		CEE2FD11196B9CE200367F6A /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2FD10196B9CE200367F6A /* MapViewController.m */; };
+		CEE2FD13196B9CE200367F6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE2FD12196B9CE200367F6A /* Images.xcassets */; };
+		CEE2FD1A196B9CE200367F6A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE2FD19196B9CE200367F6A /* XCTest.framework */; };
+		CEE2FD1B196B9CE200367F6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE2FCF7196B9CE200367F6A /* Foundation.framework */; };
+		CEE2FD1C196B9CE200367F6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE2FCFB196B9CE200367F6A /* UIKit.framework */; };
+		CEE2FD24196B9CE200367F6A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEE2FD22196B9CE200367F6A /* InfoPlist.strings */; };
+		CEE2FD26196B9CE200367F6A /* HikingTrailsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2FD25196B9CE200367F6A /* HikingTrailsTests.m */; };
+		CEE2FD31196B9E7500367F6A /* Trail.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2FD30196B9E7500367F6A /* Trail.m */; };
+		CEE2FD35196B9E9000367F6A /* TrailManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE2FD34196B9E9000367F6A /* TrailManager.m */; };
+		CEE2FD37196BA26600367F6A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE2FD36196BA26600367F6A /* MapKit.framework */; };
+		CEE2FD39196BA27100367F6A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE2FD38196BA27100367F6A /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEE2FD1D196B9CE200367F6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEE2FCEC196B9CE200367F6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEE2FCF3196B9CE200367F6A;
+			remoteInfo = HikingTrails;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE95F79D196C59B80011FB88 /* Albertson.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Albertson.gpx; sourceTree = "<group>"; };
+		CE95F79E196C59B80011FB88 /* LangLoop.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LangLoop.gpx; sourceTree = "<group>"; };
+		CE95F79F196C59B80011FB88 /* LongCanyonTrl.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LongCanyonTrl.gpx; sourceTree = "<group>"; };
+		CEE2FCF4196B9CE200367F6A /* HikingTrails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HikingTrails.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE2FCF7196B9CE200367F6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEE2FCF9196B9CE200367F6A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CEE2FCFB196B9CE200367F6A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CEE2FCFF196B9CE200367F6A /* HikingTrails-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HikingTrails-Info.plist"; sourceTree = "<group>"; };
+		CEE2FD01196B9CE200367F6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEE2FD03196B9CE200367F6A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEE2FD05196B9CE200367F6A /* HikingTrails-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HikingTrails-Prefix.pch"; sourceTree = "<group>"; };
+		CEE2FD06196B9CE200367F6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CEE2FD07196B9CE200367F6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CEE2FD0A196B9CE200367F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEE2FD0C196B9CE200367F6A /* TrailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrailViewController.h; sourceTree = "<group>"; };
+		CEE2FD0D196B9CE200367F6A /* TrailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrailViewController.m; sourceTree = "<group>"; };
+		CEE2FD0F196B9CE200367F6A /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		CEE2FD10196B9CE200367F6A /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		CEE2FD12196B9CE200367F6A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CEE2FD18196B9CE200367F6A /* HikingTrailsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HikingTrailsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE2FD19196B9CE200367F6A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CEE2FD21196B9CE200367F6A /* HikingTrailsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HikingTrailsTests-Info.plist"; sourceTree = "<group>"; };
+		CEE2FD23196B9CE200367F6A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEE2FD25196B9CE200367F6A /* HikingTrailsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HikingTrailsTests.m; sourceTree = "<group>"; };
+		CEE2FD2F196B9E7500367F6A /* Trail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trail.h; sourceTree = "<group>"; };
+		CEE2FD30196B9E7500367F6A /* Trail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trail.m; sourceTree = "<group>"; };
+		CEE2FD33196B9E9000367F6A /* TrailManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrailManager.h; sourceTree = "<group>"; };
+		CEE2FD34196B9E9000367F6A /* TrailManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrailManager.m; sourceTree = "<group>"; };
+		CEE2FD36196BA26600367F6A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		CEE2FD38196BA27100367F6A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEE2FCF1196B9CE200367F6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE2FD39196BA27100367F6A /* CoreLocation.framework in Frameworks */,
+				CEE2FD37196BA26600367F6A /* MapKit.framework in Frameworks */,
+				CEE2FCFA196B9CE200367F6A /* CoreGraphics.framework in Frameworks */,
+				CEE2FCFC196B9CE200367F6A /* UIKit.framework in Frameworks */,
+				CEE2FCF8196B9CE200367F6A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE2FD15196B9CE200367F6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE2FD1A196B9CE200367F6A /* XCTest.framework in Frameworks */,
+				CEE2FD1C196B9CE200367F6A /* UIKit.framework in Frameworks */,
+				CEE2FD1B196B9CE200367F6A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEE2FCEB196B9CE200367F6A = {
+			isa = PBXGroup;
+			children = (
+				CEE2FCFD196B9CE200367F6A /* HikingTrails */,
+				CEE2FD1F196B9CE200367F6A /* HikingTrailsTests */,
+				CEE2FCF6196B9CE200367F6A /* Frameworks */,
+				CEE2FCF5196B9CE200367F6A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEE2FCF5196B9CE200367F6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2FCF4196B9CE200367F6A /* HikingTrails.app */,
+				CEE2FD18196B9CE200367F6A /* HikingTrailsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEE2FCF6196B9CE200367F6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2FD38196BA27100367F6A /* CoreLocation.framework */,
+				CEE2FD36196BA26600367F6A /* MapKit.framework */,
+				CEE2FCF7196B9CE200367F6A /* Foundation.framework */,
+				CEE2FCF9196B9CE200367F6A /* CoreGraphics.framework */,
+				CEE2FCFB196B9CE200367F6A /* UIKit.framework */,
+				CEE2FD19196B9CE200367F6A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEE2FCFD196B9CE200367F6A /* HikingTrails */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2FD06196B9CE200367F6A /* AppDelegate.h */,
+				CEE2FD07196B9CE200367F6A /* AppDelegate.m */,
+				CEE2FD09196B9CE200367F6A /* Main.storyboard */,
+				CEE2FD0C196B9CE200367F6A /* TrailViewController.h */,
+				CEE2FD0D196B9CE200367F6A /* TrailViewController.m */,
+				CEE2FD0F196B9CE200367F6A /* MapViewController.h */,
+				CEE2FD10196B9CE200367F6A /* MapViewController.m */,
+				CEE2FD32196B9E7C00367F6A /* Model */,
+				CEE2FD12196B9CE200367F6A /* Images.xcassets */,
+				CEE2FCFE196B9CE200367F6A /* Supporting Files */,
+			);
+			path = HikingTrails;
+			sourceTree = "<group>";
+		};
+		CEE2FCFE196B9CE200367F6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2FCFF196B9CE200367F6A /* HikingTrails-Info.plist */,
+				CE95F79D196C59B80011FB88 /* Albertson.gpx */,
+				CE95F79E196C59B80011FB88 /* LangLoop.gpx */,
+				CE95F79F196C59B80011FB88 /* LongCanyonTrl.gpx */,
+				CEE2FD00196B9CE200367F6A /* InfoPlist.strings */,
+				CEE2FD03196B9CE200367F6A /* main.m */,
+				CEE2FD05196B9CE200367F6A /* HikingTrails-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEE2FD1F196B9CE200367F6A /* HikingTrailsTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2FD25196B9CE200367F6A /* HikingTrailsTests.m */,
+				CEE2FD20196B9CE200367F6A /* Supporting Files */,
+			);
+			path = HikingTrailsTests;
+			sourceTree = "<group>";
+		};
+		CEE2FD20196B9CE200367F6A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2FD21196B9CE200367F6A /* HikingTrailsTests-Info.plist */,
+				CEE2FD22196B9CE200367F6A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEE2FD32196B9E7C00367F6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2FD2F196B9E7500367F6A /* Trail.h */,
+				CEE2FD30196B9E7500367F6A /* Trail.m */,
+				CEE2FD33196B9E9000367F6A /* TrailManager.h */,
+				CEE2FD34196B9E9000367F6A /* TrailManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEE2FCF3196B9CE200367F6A /* HikingTrails */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE2FD29196B9CE200367F6A /* Build configuration list for PBXNativeTarget "HikingTrails" */;
+			buildPhases = (
+				CEE2FCF0196B9CE200367F6A /* Sources */,
+				CEE2FCF1196B9CE200367F6A /* Frameworks */,
+				CEE2FCF2196B9CE200367F6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HikingTrails;
+			productName = HikingTrails;
+			productReference = CEE2FCF4196B9CE200367F6A /* HikingTrails.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEE2FD17196B9CE200367F6A /* HikingTrailsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEE2FD2C196B9CE200367F6A /* Build configuration list for PBXNativeTarget "HikingTrailsTests" */;
+			buildPhases = (
+				CEE2FD14196B9CE200367F6A /* Sources */,
+				CEE2FD15196B9CE200367F6A /* Frameworks */,
+				CEE2FD16196B9CE200367F6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEE2FD1E196B9CE200367F6A /* PBXTargetDependency */,
+			);
+			name = HikingTrailsTests;
+			productName = HikingTrailsTests;
+			productReference = CEE2FD18196B9CE200367F6A /* HikingTrailsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEE2FCEC196B9CE200367F6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = someCompanyNameHere;
+				TargetAttributes = {
+					CEE2FD17196B9CE200367F6A = {
+						TestTargetID = CEE2FCF3196B9CE200367F6A;
+					};
+				};
+			};
+			buildConfigurationList = CEE2FCEF196B9CE200367F6A /* Build configuration list for PBXProject "HikingTrails" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEE2FCEB196B9CE200367F6A;
+			productRefGroup = CEE2FCF5196B9CE200367F6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEE2FCF3196B9CE200367F6A /* HikingTrails */,
+				CEE2FD17196B9CE200367F6A /* HikingTrailsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEE2FCF2196B9CE200367F6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE95F7A1196C59B80011FB88 /* LangLoop.gpx in Resources */,
+				CE95F7A0196C59B80011FB88 /* Albertson.gpx in Resources */,
+				CEE2FD13196B9CE200367F6A /* Images.xcassets in Resources */,
+				CEE2FD02196B9CE200367F6A /* InfoPlist.strings in Resources */,
+				CE95F7A2196C59B80011FB88 /* LongCanyonTrl.gpx in Resources */,
+				CEE2FD0B196B9CE200367F6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE2FD16196B9CE200367F6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE2FD24196B9CE200367F6A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEE2FCF0196B9CE200367F6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE2FD11196B9CE200367F6A /* MapViewController.m in Sources */,
+				CEE2FD31196B9E7500367F6A /* Trail.m in Sources */,
+				CEE2FD35196B9E9000367F6A /* TrailManager.m in Sources */,
+				CEE2FD08196B9CE200367F6A /* AppDelegate.m in Sources */,
+				CEE2FD0E196B9CE200367F6A /* TrailViewController.m in Sources */,
+				CEE2FD04196B9CE200367F6A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEE2FD14196B9CE200367F6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEE2FD26196B9CE200367F6A /* HikingTrailsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEE2FD1E196B9CE200367F6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEE2FCF3196B9CE200367F6A /* HikingTrails */;
+			targetProxy = CEE2FD1D196B9CE200367F6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEE2FD00196B9CE200367F6A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE2FD01196B9CE200367F6A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CEE2FD09196B9CE200367F6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE2FD0A196B9CE200367F6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEE2FD22196B9CE200367F6A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEE2FD23196B9CE200367F6A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEE2FD27196B9CE200367F6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CEE2FD28196B9CE200367F6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEE2FD2A196B9CE200367F6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HikingTrails/HikingTrails-Prefix.pch";
+				INFOPLIST_FILE = "HikingTrails/HikingTrails-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEE2FD2B196B9CE200367F6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HikingTrails/HikingTrails-Prefix.pch";
+				INFOPLIST_FILE = "HikingTrails/HikingTrails-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CEE2FD2D196B9CE200367F6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HikingTrails.app/HikingTrails";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HikingTrails/HikingTrails-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HikingTrailsTests/HikingTrailsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CEE2FD2E196B9CE200367F6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HikingTrails.app/HikingTrails";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HikingTrails/HikingTrails-Prefix.pch";
+				INFOPLIST_FILE = "HikingTrailsTests/HikingTrailsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEE2FCEF196B9CE200367F6A /* Build configuration list for PBXProject "HikingTrails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE2FD27196B9CE200367F6A /* Debug */,
+				CEE2FD28196B9CE200367F6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE2FD29196B9CE200367F6A /* Build configuration list for PBXNativeTarget "HikingTrails" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE2FD2A196B9CE200367F6A /* Debug */,
+				CEE2FD2B196B9CE200367F6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEE2FD2C196B9CE200367F6A /* Build configuration list for PBXNativeTarget "HikingTrailsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEE2FD2D196B9CE200367F6A /* Debug */,
+				CEE2FD2E196B9CE200367F6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEE2FCEC196B9CE200367F6A /* Project object */;
+}
