@@ -86,12 +86,17 @@
 }
 
 
-
 #pragma mark -TrailManagerDelegate
 -(void)didFinishParsingXMLFile:(TrailManager*)trailManager forTrail:(Trail*)trail
 {
     [self.trails addObject:trail];
-    [self.tableView reloadData];
+    //[self.tableView reloadData];
+    
+    NSInteger row = self.trails.count-1;
+    NSIndexPath* indexPath = [NSIndexPath indexPathForRow:row inSection:0];
+
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+
 }
 
 @end

@@ -56,6 +56,7 @@ static NSString* kTrail = @"trk";
 static NSString* kName = @"name";
 static NSString* kTrackPoint = @"trkpt";
 static NSString* kElevation = @"ele";
+static NSString* kSource = @"src";
 static NSString* kTime = @"time";
 static NSString* kLatitude = @"lat";
 static NSString* kLongtitude = @"lon";
@@ -90,7 +91,7 @@ static NSString* kLongtitude = @"lon";
         //println("coor lat:\(corrdinate.latitude) long:\(corrdinate.longitude)")
     }
     else if ([elementName isEqualToString:kName] || [elementName isEqualToString:kElevation] ||
-             [elementName isEqualToString:kTime])
+             [elementName isEqualToString:kTime] || [elementName isEqualToString:kSource])
     {
         self.currentString = [[NSMutableString alloc]init];
     }

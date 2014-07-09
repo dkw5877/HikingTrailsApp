@@ -10,6 +10,17 @@
 		CE95F7A0196C59B80011FB88 /* Albertson.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CE95F79D196C59B80011FB88 /* Albertson.gpx */; };
 		CE95F7A1196C59B80011FB88 /* LangLoop.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CE95F79E196C59B80011FB88 /* LangLoop.gpx */; };
 		CE95F7A2196C59B80011FB88 /* LongCanyonTrl.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CE95F79F196C59B80011FB88 /* LongCanyonTrl.gpx */; };
+		CED13B10196DED1B0051EC81 /* OakbrookVista.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CED13B05196DED1B0051EC81 /* OakbrookVista.gpx */; };
+		CED13B11196DED1B0051EC81 /* RidgelineSingletrack.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CED13B06196DED1B0051EC81 /* RidgelineSingletrack.gpx */; };
+		CED13B12196DED1B0051EC81 /* SandstoneHillsTrl.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CED13B07196DED1B0051EC81 /* SandstoneHillsTrl.gpx */; };
+		CED13B13196DED1B0051EC81 /* SecretPassageToSimiPeak.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CED13B08196DED1B0051EC81 /* SecretPassageToSimiPeak.gpx */; };
+		CED13B14196DED1B0051EC81 /* SecretTrail.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CED13B09196DED1B0051EC81 /* SecretTrail.gpx */; };
+		CED13B15196DED1B0051EC81 /* Sunrise-MeadowVista.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CED13B0A196DED1B0051EC81 /* Sunrise-MeadowVista.gpx */; };
+		CED13B16196DED1B0051EC81 /* SunsetHillsTrail.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CED13B0B196DED1B0051EC81 /* SunsetHillsTrail.gpx */; };
+		CED13B17196DED1B0051EC81 /* TheChute.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CED13B0C196DED1B0051EC81 /* TheChute.gpx */; };
+		CED13B18196DED1B0051EC81 /* WatertankRd.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CED13B0D196DED1B0051EC81 /* WatertankRd.gpx */; };
+		CED13B19196DED1B0051EC81 /* WoodridgeConnector.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CED13B0E196DED1B0051EC81 /* WoodridgeConnector.gpx */; };
+		CED13B1A196DED1B0051EC81 /* WoodridgeLoop.gpx in Resources */ = {isa = PBXBuildFile; fileRef = CED13B0F196DED1B0051EC81 /* WoodridgeLoop.gpx */; };
 		CEE2FCF8196B9CE200367F6A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE2FCF7196B9CE200367F6A /* Foundation.framework */; };
 		CEE2FCFA196B9CE200367F6A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE2FCF9196B9CE200367F6A /* CoreGraphics.framework */; };
 		CEE2FCFC196B9CE200367F6A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE2FCFB196B9CE200367F6A /* UIKit.framework */; };
@@ -45,6 +56,17 @@
 		CE95F79D196C59B80011FB88 /* Albertson.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Albertson.gpx; sourceTree = "<group>"; };
 		CE95F79E196C59B80011FB88 /* LangLoop.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LangLoop.gpx; sourceTree = "<group>"; };
 		CE95F79F196C59B80011FB88 /* LongCanyonTrl.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = LongCanyonTrl.gpx; sourceTree = "<group>"; };
+		CED13B05196DED1B0051EC81 /* OakbrookVista.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = OakbrookVista.gpx; sourceTree = "<group>"; };
+		CED13B06196DED1B0051EC81 /* RidgelineSingletrack.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = RidgelineSingletrack.gpx; sourceTree = "<group>"; };
+		CED13B07196DED1B0051EC81 /* SandstoneHillsTrl.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SandstoneHillsTrl.gpx; sourceTree = "<group>"; };
+		CED13B08196DED1B0051EC81 /* SecretPassageToSimiPeak.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SecretPassageToSimiPeak.gpx; sourceTree = "<group>"; };
+		CED13B09196DED1B0051EC81 /* SecretTrail.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SecretTrail.gpx; sourceTree = "<group>"; };
+		CED13B0A196DED1B0051EC81 /* Sunrise-MeadowVista.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Sunrise-MeadowVista.gpx"; sourceTree = "<group>"; };
+		CED13B0B196DED1B0051EC81 /* SunsetHillsTrail.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SunsetHillsTrail.gpx; sourceTree = "<group>"; };
+		CED13B0C196DED1B0051EC81 /* TheChute.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = TheChute.gpx; sourceTree = "<group>"; };
+		CED13B0D196DED1B0051EC81 /* WatertankRd.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = WatertankRd.gpx; sourceTree = "<group>"; };
+		CED13B0E196DED1B0051EC81 /* WoodridgeConnector.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = WoodridgeConnector.gpx; sourceTree = "<group>"; };
+		CED13B0F196DED1B0051EC81 /* WoodridgeLoop.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = WoodridgeLoop.gpx; sourceTree = "<group>"; };
 		CEE2FCF4196B9CE200367F6A /* HikingTrails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HikingTrails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE2FCF7196B9CE200367F6A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEE2FCF9196B9CE200367F6A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -152,6 +174,17 @@
 		CEE2FCFE196B9CE200367F6A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CED13B05196DED1B0051EC81 /* OakbrookVista.gpx */,
+				CED13B06196DED1B0051EC81 /* RidgelineSingletrack.gpx */,
+				CED13B07196DED1B0051EC81 /* SandstoneHillsTrl.gpx */,
+				CED13B08196DED1B0051EC81 /* SecretPassageToSimiPeak.gpx */,
+				CED13B09196DED1B0051EC81 /* SecretTrail.gpx */,
+				CED13B0A196DED1B0051EC81 /* Sunrise-MeadowVista.gpx */,
+				CED13B0B196DED1B0051EC81 /* SunsetHillsTrail.gpx */,
+				CED13B0C196DED1B0051EC81 /* TheChute.gpx */,
+				CED13B0D196DED1B0051EC81 /* WatertankRd.gpx */,
+				CED13B0E196DED1B0051EC81 /* WoodridgeConnector.gpx */,
+				CED13B0F196DED1B0051EC81 /* WoodridgeLoop.gpx */,
 				CEE2FCFF196B9CE200367F6A /* HikingTrails-Info.plist */,
 				CE95F79D196C59B80011FB88 /* Albertson.gpx */,
 				CE95F79E196C59B80011FB88 /* LangLoop.gpx */,
@@ -269,11 +302,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE95F7A1196C59B80011FB88 /* LangLoop.gpx in Resources */,
+				CED13B17196DED1B0051EC81 /* TheChute.gpx in Resources */,
+				CED13B19196DED1B0051EC81 /* WoodridgeConnector.gpx in Resources */,
+				CED13B12196DED1B0051EC81 /* SandstoneHillsTrl.gpx in Resources */,
+				CED13B15196DED1B0051EC81 /* Sunrise-MeadowVista.gpx in Resources */,
 				CE95F7A0196C59B80011FB88 /* Albertson.gpx in Resources */,
+				CED13B18196DED1B0051EC81 /* WatertankRd.gpx in Resources */,
+				CED13B14196DED1B0051EC81 /* SecretTrail.gpx in Resources */,
+				CED13B10196DED1B0051EC81 /* OakbrookVista.gpx in Resources */,
+				CED13B13196DED1B0051EC81 /* SecretPassageToSimiPeak.gpx in Resources */,
+				CED13B1A196DED1B0051EC81 /* WoodridgeLoop.gpx in Resources */,
+				CED13B16196DED1B0051EC81 /* SunsetHillsTrail.gpx in Resources */,
 				CEE2FD13196B9CE200367F6A /* Images.xcassets in Resources */,
 				CEE2FD02196B9CE200367F6A /* InfoPlist.strings in Resources */,
 				CE95F7A2196C59B80011FB88 /* LongCanyonTrl.gpx in Resources */,
 				CEE2FD0B196B9CE200367F6A /* Main.storyboard in Resources */,
+				CED13B11196DED1B0051EC81 /* RidgelineSingletrack.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
