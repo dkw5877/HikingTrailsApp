@@ -31,6 +31,11 @@
     [self configureLocationManger];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.locationManager startUpdatingLocation];
+}
+
 - (void)configureLocationManger
 {
     self.locationManager = [[CLLocationManager alloc]init];
@@ -45,6 +50,7 @@
     if (self.trail)
     {
       [self createRegionForTrail];
+      [self createTrailFromGeopoints];
     }
     else
     {
@@ -79,6 +85,54 @@
     return CLLocationCoordinate2DMake(latitude, longitude);
 }
 
+- (void)createTrailFromGeopoints
+{
+    NSInteger pointsCount = self.trail.geopoints.count;
+    
+    //create C style array for holding the point structure
+    CLLocationCoordinate2D points[pointsCount];
+    
+    for (int i = 0; i < pointsCount; i++)
+    {
+        CLLocation* location = self.trail.geopoints[i];
+        points[i] = location.coordinate;
+    }
+    
+    MKPolyline* route = [MKPolyline polylineWithCoordinates:points count:pointsCount];
+    [self.mapView removeOverlays:self.mapView.overlays];
+    [self.mapView addOverlay:route];
+}
+
+
+- (void)calculateSpan
+{
+    float maxLatitude = 0.0;
+    float minLatitude = 0.0;
+    float maxLongitude = 0.0;
+    float minLongitude  = 0.0;
+    
+    for (CLLocation* location in self.trail.geopoints)
+    {
+        if (location.coordinate.latitude > maxLatitude)
+        {
+            maxLatitude = location.coordinate.latitude;
+        }
+        else if (location.coordinate.latitude < minLatitude)
+        {
+            minLatitude = location.coordinate.latitude;
+        }
+        else if (location.coordinate.longitude > maxLongitude)
+        {
+            maxLongitude = location.coordinate.longitude;
+        }
+        else if (location.coordinate.longitude < minLongitude)
+        {
+            minLongitude = location.coordinate.longitude;
+        }
+    }
+}
+
+
 
 #pragma mark - CLLocationManagerDelegate Method
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
@@ -92,16 +146,16 @@
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 {
     NSLog(@"didUpdateUserLocation %@",userLocation);
-    
+    [self createRegionForTrail];
+    [self createTrailFromGeopoints];
 }
 
-- (void)mapViewWillStartLocatingUser:(MKMapView *)mapView
-{
-    NSLog(@"mapViewWillStartLocatingUser");
-}
 
-- (void)mapView:(MKMapView *)mapView didAddOverlayRenderers:(NSArray *)renderers
+- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
 {
-    
+    MKPolylineRenderer* routeView = [[MKPolylineRenderer alloc]initWithOverlay:overlay];
+    routeView.strokeColor = [UIColor greenColor];
+    routeView.lineWidth = 1.0f;
+    return routeView;
 }
 @end
