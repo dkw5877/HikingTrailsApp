@@ -7,6 +7,7 @@
 //
 
 #import "TrailViewController.h"
+#import "MapViewController.h"
 #import "TrailManager.h"
 #import "Trail.h"
 
@@ -50,6 +51,27 @@
     Trail* trail = self.trails[indexPath.item];
     cell.textLabel.text = trail.trailName;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell* cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    if (cell.accessoryType == UITableViewCellAccessoryNone)
+    {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    }
+    else
+    {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+
+    //get the tab bar controller
+    MapViewController* mvc = [self.tabBarController.viewControllers objectAtIndex:1];
+    
+    //pass the selected cell
+    mvc.trail = self.trails[indexPath.item];
+    
 }
 
 #pragma mark -TrailManagerDelegate

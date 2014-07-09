@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Trail.h"
 
 @interface MapViewController : UIViewController
+
+@property (nonatomic)Trail* trail;
 
 @end
