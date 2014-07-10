@@ -107,6 +107,7 @@ static NSString* kLongtitude = @"lon";
     if ([elementName isEqualToString:kName])
     {
         self.currentTrail.trailName = self.currentString;
+        //[self.currentString setString:@""];
     }
     else if ([elementName isEqualToString:kTrackPoint])
     {

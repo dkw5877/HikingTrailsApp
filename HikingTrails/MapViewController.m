@@ -12,6 +12,8 @@
 
 @interface MapViewController () < MKMapViewDelegate, CLLocationManagerDelegate >
 
+@property (weak, nonatomic) IBOutlet UINavigationBar *navigationBar;
+
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (nonatomic)CLLocationManager* locationManager;
 @end
@@ -21,7 +23,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+
     //setup the mapview delegate and user location
     self.mapView.delegate = self;
     [self.mapView showsUserLocation];
@@ -34,6 +36,10 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    if (self.trail)
+    {
+        self.navigationBar.topItem.title = self.trail.trailName;
+    }
     [self.locationManager startUpdatingLocation];
 }
 
@@ -53,10 +59,6 @@
       [self createRegionForTrail];
       [self createTrailFromGeopoints];
     }
-    else
-    {
-        
-    }
 
 }
 
@@ -66,7 +68,8 @@
     CLLocationCoordinate2D centerCoordinate = [self calculateCenterCoordinate];
     
     //determine the size of the map area to show around the location
-    MKCoordinateSpan coordinateSpan = MKCoordinateSpanMake(0.01, 0.01);
+    MKCoordinateSpan coordinateSpan = [self calculateRegionSpan];
+    //MKCoordinateSpanMake(0.01, 0.01);
     
     //create the region of the map that we want to show
     MKCoordinateRegion region = MKCoordinateRegionMake(centerCoordinate, coordinateSpan);
@@ -96,6 +99,10 @@
     for (int i = 0; i < pointsCount; i++)
     {
         CLLocation* location = self.trail.geopoints[i];
+        if (i == 0)
+        {
+            NSLog(@"start %f  %f",location.coordinate.latitude, location.coordinate.longitude);
+        }
         points[i] = location.coordinate;
     }
     
@@ -105,12 +112,13 @@
 }
 
 
-- (void)calculateSpan
+- (MKCoordinateSpan)calculateRegionSpan
 {
-    float maxLatitude = 0.0;
-    float minLatitude = 0.0;
-    float maxLongitude = 0.0;
-    float minLongitude  = 0.0;
+    float maxLatitude = -MAXFLOAT;
+    float minLatitude = MAXFLOAT;
+    float maxLongitude = -MAXFLOAT;
+    float minLongitude  = MAXFLOAT;
+    float margin = 0.005f;
     
     for (CLLocation* location in self.trail.geopoints)
     {
@@ -118,19 +126,31 @@
         {
             maxLatitude = location.coordinate.latitude;
         }
-        else if (location.coordinate.latitude < minLatitude)
+        if (location.coordinate.latitude < minLatitude)
         {
             minLatitude = location.coordinate.latitude;
         }
-        else if (location.coordinate.longitude > maxLongitude)
+        if (location.coordinate.longitude > maxLongitude)
         {
             maxLongitude = location.coordinate.longitude;
         }
-        else if (location.coordinate.longitude < minLongitude)
+        if (location.coordinate.longitude < minLongitude)
         {
             minLongitude = location.coordinate.longitude;
         }
     }
+    
+    float latitudeDelta = fabs(maxLatitude) - fabs(minLatitude) + margin;
+    float longitudeDelta = fabs(maxLongitude) - fabs(minLongitude) + margin;
+    
+    NSLog(@"maxLatitude:%f",maxLatitude);
+    NSLog(@"minLatitude:%f",minLatitude);
+    NSLog(@"maxLongitude:%f",maxLongitude);
+    NSLog(@"minLongitude:%f",minLongitude);
+    NSLog(@"latitudeDelta:%f",latitudeDelta);
+    NSLog(@"longitudeDelta:%f",longitudeDelta);
+    
+    return MKCoordinateSpanMake(fabs(latitudeDelta), fabs(longitudeDelta));
 }
 
 
@@ -144,19 +164,11 @@
 
 
 #pragma mark - MKMapViewDelegate Methods
-- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
-{
-    NSLog(@"didUpdateUserLocation %@",userLocation);
-    [self createRegionForTrail];
-    [self createTrailFromGeopoints];
-}
-
-
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
 {
     MKPolylineRenderer* routeView = [[MKPolylineRenderer alloc]initWithOverlay:overlay];
-    routeView.strokeColor = [UIColor greenColor];
-    routeView.lineWidth = 1.0f;
+    routeView.strokeColor = [UIColor redColor];
+    routeView.lineWidth = 2.0f;
     return routeView;
 }
 @end
