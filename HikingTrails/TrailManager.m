@@ -69,7 +69,7 @@ static NSString* kLongtitude = @"lon";
 
 - (void)parserDidEndDocument:(NSXMLParser *)parser
 {
-    [self.delegate didFinishParsingXMLFile:self forTrail:self.currentTrail];
+    //[self.delegate didFinishParsingXMLFile:self forTrail:self.currentTrail];
 }
 
 /*
@@ -80,6 +80,7 @@ static NSString* kLongtitude = @"lon";
     //create a new trail object
     if ([elementName isEqualToString:kTrail])
     {
+        //create a new trail
         self.currentTrail = [[Trail alloc]init];
     }
     else if([elementName isEqualToString:kTrackPoint])
@@ -88,7 +89,6 @@ static NSString* kLongtitude = @"lon";
         double lon = [attributeDict[kLongtitude] doubleValue];
         CLLocation* coordinate = [[CLLocation alloc]initWithLatitude:lat longitude:lon];
         [self.currentTrail.geopoints addObject:coordinate];
-        //println("coor lat:\(corrdinate.latitude) long:\(corrdinate.longitude)")
     }
     else if ([elementName isEqualToString:kName] || [elementName isEqualToString:kElevation] ||
              [elementName isEqualToString:kTime] || [elementName isEqualToString:kSource])
@@ -107,7 +107,12 @@ static NSString* kLongtitude = @"lon";
     if ([elementName isEqualToString:kName])
     {
         self.currentTrail.trailName = self.currentString;
-        //[self.currentString setString:@""];
+        
+    }
+    else if ([elementName isEqualToString:kTrail])
+    {
+        //call the delegate to create the trail
+        [self.delegate didFinishParsingXMLFile:self forTrail:self.currentTrail];
     }
     else if ([elementName isEqualToString:kTrackPoint])
     {
