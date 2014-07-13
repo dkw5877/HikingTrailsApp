@@ -31,11 +31,14 @@
 
 - (void)loadTrailData:(NSURL*)url
 {
+   
     dispatch_async(dispatch_get_main_queue(), ^{
         NSXMLParser* parser = [[NSXMLParser alloc]initWithContentsOfURL:url];
         parser.delegate = self;
         [parser parse];
     });
+    
+
 }
 
 
@@ -69,7 +72,7 @@ static NSString* kLongtitude = @"lon";
 
 - (void)parserDidEndDocument:(NSXMLParser *)parser
 {
-    //[self.delegate didFinishParsingXMLFile:self forTrail:self.currentTrail];
+    
 }
 
 /*
